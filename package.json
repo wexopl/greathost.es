@@ -5,10 +5,7 @@
     "renew": "node renew.js"
   },
   "dependencies": {
-    "playwright": "^1.38.0"
+    "playwright": "^1.38.0",
+    "axios": "^1.6.0"
   }
-}
-"dependencies": {
-  "playwright": "^1.38.0",
-  "axios": "^1.6.0"
 }
