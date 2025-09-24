@@ -19,8 +19,7 @@ jobs:
           node-version: '20'
 
       - name: Install dependencies
-  run: npm install
-
+        run: npm install
 
       - name: Run renew script
         env:
