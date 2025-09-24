@@ -21,6 +21,9 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      - name: Install Playwright Browsers
+        run: npx playwright install --with-deps chromium
+
       - name: Run renew script
         env:
           LOGIN_URL: ${{ secrets.GH_LOGIN_URL }}
