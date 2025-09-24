@@ -8,3 +8,7 @@
     "playwright": "^1.38.0"
   }
 }
+"dependencies": {
+  "playwright": "^1.38.0",
+  "axios": "^1.6.0"
+}
