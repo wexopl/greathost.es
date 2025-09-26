@@ -4,12 +4,12 @@ const { chromium } = require("playwright");
   const LOGIN_URL = process.env.GH_LOGIN_URL || "https://greathost.es/login";
   const DASHBOARD_URL = "https://greathost.es/dashboard";
   const CONTRACTS_URL = "https://greathost.es/contracts";
-  const CONTRACT_URL = process.env.GH_CONTRACT_URL;
-  const EMAIL = process.env.GH_EMAIL;
-  const PASSWORD = process.env.GH_PASSWORD;
+  const CONTRACT_URL = process.env.CONTRACT_URL;
+  const EMAIL = process.env.EMAIL;
+  const PASSWORD = process.env.PASSWORD;
 
   if (!CONTRACT_URL || !EMAIL || !PASSWORD) {
-    console.error("❌ 缺少必要的环境变量 (GH_CONTRACT_URL / GH_EMAIL / GH_PASSWORD)");
+    console.error("❌ 缺少必要的环境变量 (CONTRACT_URL / EMAIL / PASSWORD)");
     process.exit(1);
   }
 
