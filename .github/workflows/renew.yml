@@ -27,9 +27,9 @@ jobs:
       - name: Run renew script
         env:
           LOGIN_URL: ${{ secrets.GH_LOGIN_URL }}
-          CONTRACT_URL: ${{ secrets.GH_CONTRACT_URL }}
-          EMAIL: ${{ secrets.GH_EMAIL }}
-          PASSWORD: ${{ secrets.GH_PASSWORD }}
+          CONTRACT_URL: ${{ secrets.CONTRACT_URL }}
+          EMAIL: ${{ secrets.EMAIL }}
+          PASSWORD: ${{ secrets.PASSWORD }}
           TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
           TG_CHAT_ID: ${{ secrets.TG_CHAT_ID }}
           HEADLESS: 'true'
